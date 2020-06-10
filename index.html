@@ -7,10 +7,8 @@
             .container {
                 background-color: whitesmoke;
                 width: 700px;
-                margin-left: auto;
+                margin: 50px auto;
                 padding: 20px;
-                margin-right: auto;
-                margin-top: 30px;
                 box-shadow: 0px 0px 10px 1px #888888;
                 border-radius: 10px;
             }
@@ -29,7 +27,7 @@
             .scoreboard {
                 text-align: center;
                 border: black 2px solid;
-                border-radius: 5px;
+                border-radius: 10px;
                 width: 200px;
                 padding: 10px;
                 margin: auto;
@@ -43,7 +41,8 @@
                 font-weight: bold;
                 width: 150px;
                 padding: 4px;
-                top: 5px;
+                bottom: 0px;
+                border-radius: 10px;
             }
 
             #user-label {
@@ -51,9 +50,23 @@
                 left: -180px;
             }
 
+            #user-pic {
+                position: absolute;
+                left: -115px;
+                top: -20px;
+                font-size: 30px;
+            }
+
             #comp-label {
                 position: absolute;
                 right: -180px;
+            }
+
+            #comp-pic {
+                position: absolute;
+                right: -120px;  
+                top: -20px;
+                font-size: 30px;
             }
 
             .result {
@@ -90,6 +103,7 @@
                 color: white;
                 width: 200px; 
                 margin: 20px auto;
+                border-radius: 10px;
             }
         </style>
     </head>
@@ -102,6 +116,12 @@
             </header>
 
             <div class="scoreboard">
+                <div id="user-pic">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div id="comp-pic">
+                    <i class="fas fa-robot"></i>
+                </div>
                 <div id="user-label" class="badge">User</div>
                 <div id="comp-label" class="badge">Computer</div>
                 <span id="user-score">0</span>:<span id="comp-score">0</span>
@@ -110,9 +130,15 @@
             <p id="message">Make your move!</p>
 
             <div class="choices">
-                <div class="choice" id="rock"><i class="fas fa-hand-rock"></i></div>
-                <div class="choice" id="paper"><i class="fas fa-hand-paper"></i></div>
-                <div class="choice" id="scissors"><i class="fas fa-hand-scissors"></i></div>
+                <div class="choice" id="rock">
+                    <i class="fas fa-hand-rock"></i>
+                </div>
+                <div class="choice" id="paper">
+                    <i class="fas fa-hand-paper"></i>
+                </div>
+                <div class="choice" id="scissors">
+                    <i class="fas fa-hand-scissors"></i>
+                </div>
             </div>
 
             <div class="result">
