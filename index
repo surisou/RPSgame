@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <title>Rock Paper Scissors Game</title>
+        <script src="https://kit.fontawesome.com/7289bc6ec5.js" crossorigin="anonymous"></script>
+
+        <style>
+            .container {
+                background-color: whitesmoke;
+                width: 700px;
+                margin-left: auto;
+                padding: 20px;
+                margin-right: auto;
+                margin-top: 30px;
+                box-shadow: 0px 0px 10px 1px #888888;
+                border-radius: 10px;
+            }
+
+            body {
+                background-image: linear-gradient(blue, white);
+                background-repeat: no-repeat;
+                font-family: monospace;
+                font-size: 20px;
+            }
+
+            header {
+                text-align: center;
+            }
+
+            .scoreboard {
+                text-align: center;
+                border: black 2px solid;
+                border-radius: 5px;
+                width: 200px;
+                padding: 10px;
+                margin: auto;
+                position: relative;
+                font-size: 20px;
+            }
+
+            .badge {
+                background: blue;
+                color: white;
+                font-weight: bold;
+                width: 150px;
+                padding: 4px;
+                top: 5px;
+            }
+
+            #user-label {
+                position: absolute;
+                left: -180px;
+            }
+
+            #comp-label {
+                position: absolute;
+                right: -180px;
+            }
+
+            .result {
+                text-align: center;
+            }
+
+            .choices {
+                text-align: center;
+            }
+
+            .choice {
+                font-size: 50px;
+                display: inline-block;
+                padding: 20px;
+                border: 3px solid black;
+                border-radius: 50%;
+            }
+
+            .choice:hover {
+                background: blue;
+                color: white;
+            }
+
+            #message {
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="container">
+            <header>
+                <h1>Rock Paper Scissors Game</h1>
+            </header>
+
+            <div class="scoreboard">
+                <div id="user-label" class="badge">User</div>
+                <div id="comp-label" class="badge">Computer</div>
+                <span id="user-score">0</span>:<span id="comp-score">0</span>
+            </div>
+
+            <p id="message">Make your move!</p>
+
+            <div class="choices">
+                <div class="choice" id="rock"><i class="fas fa-hand-rock"></i></div>
+                <div class="choice" id="paper"><i class="fas fa-hand-paper"></i></div>
+                <div class="choice" id="scissors"><i class="fas fa-hand-scissors"></i></div>
+            </div>
+
+            <div class="result">
+                <p></p>
+            </div>
+
+       </div>
+    </body>
+
+    <footer>
+
+    </footer>
+</html>
