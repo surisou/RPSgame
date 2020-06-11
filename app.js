@@ -8,6 +8,15 @@ const rock_div = document.getElementById("rock");
 const paper_div = document.getElementById("paper");
 const scissors_div = document.getElementById("scissors");
 
+getName();
+
+function getName() {
+    var person = prompt("Please enter your name", "User");
+    if (person != null) {
+      document.getElementById("userName").innerHTML = person;
+    }
+}
+
 function getCompChoice() {
     const choices = ['rock', 'paper', 'scissors'];
     const randomNum = Math.floor(Math.random() * 3);
@@ -18,20 +27,20 @@ function win(userChoice, compChoice) {
     userScore++;
     userScore_span.innerHTML = userScore;
     compScore_span.innerHTML = compScore;
-    result_p.innerHTML = `${userChoice} beats ${compChoice}. You win!`;
+    result_p.innerHTML = `${userChoice} beats ${compChoice}. You win! 💯`;
 }
 
 function lose(userChoice, compChoice) {
     compScore++;
     userScore_span.innerHTML = userScore;
     compScore_span.innerHTML = compScore;
-    result_p.innerHTML = `${userChoice}  doesn't beat ${compChoice}. You lose!`;
+    result_p.innerHTML = `${userChoice} doesn't beat ${compChoice}. You lose! 👎`;
 }
 
 function draw(userChoice, compChoice) {
     userScore_span.innerHTML = userScore;
     compScore_span.innerHTML = compScore;
-    result_p.innerHTML = "it's a draw";
+    result_p.innerHTML = "It's a draw. 😯";
 }
 
 function game(userChoice) {
@@ -69,5 +78,3 @@ function main() {
 }
 
 main();
-
-
