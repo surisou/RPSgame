@@ -8,7 +8,7 @@
                 background-color: whitesmoke;
                 width: 700px;
                 margin: 100px auto;
-                padding: 020px;
+                padding: 20px;
                 box-shadow: 0px 0px 10px 1px #888888;
                 border-radius: 10px;
                 text-align: center;
@@ -28,7 +28,7 @@
                 padding: 10px;
                 margin: auto;
                 position: relative;
-                font-size: 20px;
+                font-size: 30px;
             }
 
             .badge {
@@ -39,6 +39,11 @@
                 padding: 4px;
                 bottom: 0px;
                 border-radius: 10px;
+                font-size: 20px;
+            }
+
+            #userName {
+                display: inline;
             }
 
             #user-label {
@@ -49,7 +54,7 @@
             #user-pic {
                 position: absolute;
                 left: -115px;
-                top: -20px;
+                top: -10px;
                 font-size: 30px;
             }
 
@@ -61,7 +66,7 @@
             #comp-pic {
                 position: absolute;
                 right: -120px;  
-                top: -20px;
+                top: -10px;
                 font-size: 30px;
             }
 
@@ -106,8 +111,8 @@
                 <div id="comp-pic">
                     <i class="fas fa-robot"></i>
                 </div>
-                <div id="user-label" class="badge">User</div>
-                <div id="comp-label" class="badge">Computer</div>
+                <div id="user-label" class="badge"><p id="userName">User</p></div>
+                <div id="comp-label" class="badge">Robot</div>
                 <span id="user-score">0</span>:<span id="comp-score">0</span>
             </div>
 
@@ -126,7 +131,7 @@
             </div>
 
             <div class="result">
-                <p>Choose wisely.</p>
+                <p>Choose wisely!😜</p>
             </div>
 
        </div>
